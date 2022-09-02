@@ -20,11 +20,35 @@ body {
 
 img {
     width: 100%;
+    border-radius: 8px;
+    background-color: var(--cyan);
 }
 
-h3 {
+img:hover{
+    cursor: pointer;
+}
+
+img:active{
+    filter: opacity(50%) drop-shadow(0 0 0 var(--cyan));
+}
+
+.title{
+    margin-top: 18px;
+}
+
+.title a {
     color: var(--white);
     font-weight: 600;
+    font-size: 25px;
+    text-decoration: none; 
+}
+
+.title a:hover{
+    cursor: pointer;
+}
+
+.title a:active{
+    color: var(--cyan);
 }
 
 p {
@@ -45,8 +69,14 @@ p {
 
 .center {
     background-color: var(--dark-blue-card);
-    width: 21%;
+    width: 85%;
     border-radius: 15px;
+}
+
+@media (min-width: 376px) {
+    .center {
+        width: 21%;
+    }
 }
 
 .content {
@@ -62,20 +92,26 @@ p {
 
 .eth {
     color: hsl(178, 100%, 50%);
+    display: flex;
+    align-items: center;
 }
 
 .eth img {
     width: 12px;
     height: 18px;
+    margin-right: 5px;
 }
 
 .published {
     color: var(--soft-blue);
+    display: flex;
+    align-items: center;
 }
 
 .published img {
     width: 17px;
     height: 17px;
+    margin-right: 5px;
 }
 
 .avatar{
@@ -94,7 +130,20 @@ p {
     width: 30px;
     border-radius: 16px;
     border: 1px solid var(--white);
+}
 
+.name{
+    color: var(--white);
+    font-weight: 400;
+    text-decoration: none; 
+}
+
+.name:hover{
+    cursor: pointer;
+}
+
+.name:active{
+    color: var(--cyan);
 }
 
 .attribution {
