@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --dark-blue-main: hsl(217, 54%, 11%);
+    --dark-blue-card: hsl(216, 50%, 16%);
+    --dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --cyan: hsl(178, 100%, 50%);
+    --soft-blue: hsl(215, 51%, 70%);
+
+    --outfit: 'Outfit', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--outfit);
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+}
+
+h3 {
+    color: var(--white);
+    font-weight: 600;
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+
+.container {
+    margin: 0;
+    background-color: var(--dark-blue-main);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    background-color: var(--dark-blue-card);
+    width: 21%;
+    border-radius: 15px;
+}
+
+.content {
+    padding: 15px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--dark-blue-line);
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+}
+
+.eth img {
+    width: 12px;
+    height: 18px;
+}
+
+.published {
+    color: var(--soft-blue);
+}
+
+.published img {
+    width: 17px;
+    height: 17px;
+}
+
+.avatar{
+    display: flex;
+    color: var(--soft-blue);
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.avatar p{
+    margin-left: 15px;
+}
+
+.avatar img {
+    width: 30px;
+    border-radius: 16px;
+    border: 1px solid var(--white);
+
+}
+
+.attribution {
+    margin-top: 5px;
+    font-size: 11px;
+    text-align: center;
+    color: var(--soft-blue);
+}
+
+.attribution a {
+    color: var(--cyan);
+}
